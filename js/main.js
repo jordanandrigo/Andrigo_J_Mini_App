@@ -16,7 +16,7 @@ import { fetchData } from "./components/fetchData.js";
         },
 
         mounted: function() {
-            fetchData("./includes/index.php").then(data => this.updateCars(data)).catch(err => this.error = err);
+            fetchData("./includes/index.php").then(data => this.switchCars(data)).catch(err => this.error = err);
         },
         
         methods: {
@@ -34,14 +34,13 @@ import { fetchData } from "./components/fetchData.js";
 
             // updates cars with the new whips
 
-            updateCars(cars) {
+            switchCars(cars) {
                 this.miniCars = cars;
                 if (this.clickedVideo == '') {
                     this.clickedVideo = cars[0];
                 }
             },
 
-            // changing the vid using queries 
             changeVid(id) {
                 if (this.miniCars[id] && this.miniCars[id].car_id == id) {
                     this.clickedVideo = this.miniCars[id];
@@ -50,9 +49,6 @@ import { fetchData } from "./components/fetchData.js";
                     fetchData(`./includes/index.php?id=${id}`).then(data => this.clickedVideo = data[0]).catch(err => this.error = err);
                 }
             },
-            
         }
-
-
     }).$mount("#app"); 
 })();
