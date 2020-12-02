@@ -1,12 +1,10 @@
-// import fetchData here later
-
-import { fetchData } from "./components/fetchData.js";
+import { fetchData } from "./modules/fetchData.js";
 
 (() => {
     let mini_vue = new Vue({
 
         data: {
-            error: '', // If theres an error this will populated - otherwise it will not
+            error: '', 
             clickedCar: '',
             clickedMiniVideo: '',
             miniCars: [],

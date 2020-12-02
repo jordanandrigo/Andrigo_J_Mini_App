@@ -20,7 +20,7 @@
                 <p>{{ clickedVideo.slogan }}</p>
             </div>
             <div @click="toggleVid">
-                <video ref="vid" :src="`videos/${clickedVideo.vid}`" loop autoplay></video>
+                <video ref="vid" :src="`videos/${clickedVideo.vid}`" loop autoplay muted ></video>
             </div>
             <div class="videosList">
                 <div v-for="car in miniCars" @click="changeVid(car.car_id)">
