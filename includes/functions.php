@@ -8,8 +8,6 @@
          while($row = $runQuery->fetchAll(PDO::FETCH_ASSOC)) {
              $result[] = $row;
          }
- 
-         //return $result;
          echo (json_encode($result));
      }
 
@@ -21,7 +19,5 @@
         while($row = $runQuery->fetchAll(PDO::FETCH_ASSOC)) {
             $result[] = $row;
         }
-
-        //return $result;
         echo (json_encode($result));
     }

@@ -3,7 +3,7 @@ async function fetchData(sourceURL) {
     let resource = await fetch(sourceURL).then(response => {
         if (response.status !== 200) {
             throw new Error(`Danger Will Robinson! Error ${response.status}: ${errorCodes[response.status]}`);
-        } 
+        }
         return response;           
     });
     
