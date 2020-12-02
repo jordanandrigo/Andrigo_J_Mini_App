@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan A - Mini App</title>
+    <link rel="stylesheet" href="css/master.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="headerImg">
+            <img src="images/logo.png" alt="Mini Cooper Brand Logo">
+        </div>
+    </header>
+   <main id="app"> <!-- vue only works if wrapped in id or class tag-->
+         <div class="vids"> 
+            <div class="vidTitle">
+                <h2>{{ clickedVideo.carName }}</h2>
+                <p>{{ clickedVideo.slogan }}</p>
+            </div>
+            <div @click="toggleVid">
+                <video ref="vid" :src="`videos/${clickedVideo.vid}`" loop autoplay muted></video>
+            </div>
+            <div class="videosList">
+                <div v-for="car in miniCars" @click="changeVid(car.car_id)">
+                    <img :src="`images/${car.img}`" :alt="car.carName">
+                 </div>
+            </div>
+        </div> 
+        <h2 v-if="miniCars.length !=0" class="modelsTitle">Our Models</h2>
+    </main>
+ <script src="js/main.js" type="module"></script>   
+</body>
+</html>
