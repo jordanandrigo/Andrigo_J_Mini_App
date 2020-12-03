@@ -34,6 +34,13 @@
             </div>
         </div> 
         <h2 v-if="miniCars.length !=0" class="modelsTitle">2020 Models</h2>
+
+        <div class="carDescription">
+            <h2>{{ clickedVideo.name }}</h2>
+            <p> {{clickedVideo.description }}</p>
+            <hr>
+            <img :src="`images/${clickedVideo.img}`" :alt="clickedVideo.name">
+        </div> 
     </main>
  <script src="js/main.js" type="module"></script>   
 </body>

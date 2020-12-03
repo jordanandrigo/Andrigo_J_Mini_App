@@ -7,6 +7,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 .headerImg {
@@ -68,6 +69,44 @@ html {
 .vids .videosList img {
   max-width: 100%;
   border: 1px solid black;
+}
+
+.vids .vidPrice h2 {
+  position: absolute;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 4rem;
+}
+
+.carDescription {
+  color: #fff;
+  text-align: center;
+  margin: 2rem 5rem 5rem 5rem;
+  font-family:"Roboto",sans-serif
+}
+
+.carDescription h2 {
+  font-family:"DM Serif Display",serif;
+  font-size:2rem;margin:1rem
+}
+
+.carDescription p {
+  margin-bottom:2rem
+}
+
+.carDescription hr {
+  border:1px solid #00008b;
+  background-color:#00008b
+}
+
+.carDescription img {
+  display:flex;
+  align-content:center;
+  text-align:center;
+  margin:0 auto;
+  margin-top:3rem;
+  width:600px;
+  max-width:600px
 }
 
 /*# sourceMappingURL=master.css.map */
