@@ -29,14 +29,14 @@
                     <img :src="`images/${car.thumb}`" :alt="car.name">
                 </div>
             </div>
+        </div> 
+        <h2 v-if="miniCars.length !=0" class="modelsTitle">2020 Models</h2>
+        <div class="carDescription">
+            <hr>
+            <h2>{{ clickedVideo.name }}</h2>
             <div class="vidPrice">
                 <h2>{{ clickedVideo.price }}</h2>
             </div>
-        </div> 
-        <h2 v-if="miniCars.length !=0" class="modelsTitle">2020 Models</h2>
-
-        <div class="carDescription">
-            <h2>{{ clickedVideo.name }}</h2>
             <p> {{ clickedVideo.description }}</p>
             <hr>
             <img :src="`images/${clickedVideo.img}`" :alt="clickedVideo.name">

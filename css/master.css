@@ -1,12 +1,12 @@
 html {
-  background-color: #1f2726;
+  background-color: #353b3b;
 }
 
 .modelsTitle {
-  color: #6d746e;
+  color: #dddfdd;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
 }
 
@@ -70,9 +70,9 @@ html {
   max-width: 100%;
 }
 
-.vids .vidPrice h2 {
+.carDescription .vidPrice h2 {
   text-align: center;
-  color: #ffffff;
+  color: #ffffffd7;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -86,7 +86,7 @@ html {
 .carDescription h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  margin: 1rem;
+  margin: 2rem;
   text-transform: uppercase;
 }
 
