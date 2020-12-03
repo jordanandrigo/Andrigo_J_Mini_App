@@ -6,22 +6,20 @@
 
     video {
         max-width: 100%;
+        padding-top: 10%;
     }
 
     .vidTitle {
         position: absolute;
-        color: white;
-        left: 5rem;
-        top: 5rem;
-        font-family: $mainFont;
-        border-left: 4px solid white;
+        color: $main_color;
+        font-family: $main_font;
         padding-left: 2rem;
     }
 
     .vidTitle h2 {
         text-transform: uppercase;
-        font-size: 2rem;
-        font-family: $titleFont;
+        font-size: 5em;
+        font-family: $main_font;
     }
 
     .videosList {
