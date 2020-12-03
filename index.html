@@ -26,7 +26,7 @@
             </div>
             <div class="videosList">
                 <div v-for="car in miniCars" @click="changeVid(car.id)">
-                    <img :src="`images/${car.img}`" :alt="car.name">
+                    <img :src="`images/${car.thumb}`" :alt="car.name">
                 </div>
             </div>
             <div class="vidPrice">
@@ -37,7 +37,7 @@
 
         <div class="carDescription">
             <h2>{{ clickedVideo.name }}</h2>
-            <p> {{clickedVideo.description }}</p>
+            <p> {{ clickedVideo.description }}</p>
             <hr>
             <img :src="`images/${clickedVideo.img}`" :alt="clickedVideo.name">
         </div> 

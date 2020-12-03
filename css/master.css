@@ -6,7 +6,7 @@ html {
   color: #6d746e;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   text-transform: uppercase;
 }
 
@@ -68,45 +68,42 @@ html {
 }
 .vids .videosList img {
   max-width: 100%;
-  border: 1px solid black;
 }
 
 .vids .vidPrice h2 {
-  position: absolute;
+  text-align: center;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  padding-left: 4rem;
 }
 
 .carDescription {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.726);
   text-align: center;
   margin: 2rem 5rem 5rem 5rem;
-  font-family:"Roboto",sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .carDescription h2 {
-  font-family:"DM Serif Display",serif;
-  font-size:2rem;margin:1rem
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 1rem;
+  text-transform: uppercase;
 }
 
 .carDescription p {
-  margin-bottom:2rem
+  margin-bottom:2rem;
+  font-size: 1.2em;
 }
 
-.carDescription hr {
-  border:1px solid #00008b;
-  background-color:#00008b
-}
 
 .carDescription img {
-  display:flex;
-  align-content:center;
-  text-align:center;
-  margin:0 auto;
-  margin-top:3rem;
-  width:600px;
-  max-width:600px
+  display: flex;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 600px;
+  max-width: 600px;
 }
 
 /*# sourceMappingURL=master.css.map */
