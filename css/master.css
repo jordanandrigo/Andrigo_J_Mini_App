@@ -1,12 +1,13 @@
 html {
-  background-color: #1f2726;
+  background-color: #353b3b;
 }
 
 .modelsTitle {
-  color: #6d746e;
+  color: #dddfdd;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 .headerImg {
@@ -67,7 +68,42 @@ html {
 }
 .vids .videosList img {
   max-width: 100%;
-  border: 1px solid black;
+}
+
+.carDescription .vidPrice h2 {
+  text-align: center;
+  color: #ffffffd7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carDescription {
+  color: rgba(255, 255, 255, 0.726);
+  text-align: center;
+  margin: 2rem 5rem 5rem 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carDescription h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+
+.carDescription p {
+  margin-bottom:2rem;
+  font-size: 1.2em;
+}
+
+
+.carDescription img {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 600px;
+  max-width: 600px;
 }
 
 /*# sourceMappingURL=master.css.map */
