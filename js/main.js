@@ -30,8 +30,6 @@ import { fetchData } from "./modules/fetchData.js";
                 }
             },
 
-            // updates cars with the new whips
-
             switchCars(cars) {
                 this.miniCars = cars;
                 if (this.clickedVideo == '') {
